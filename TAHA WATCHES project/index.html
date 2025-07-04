@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TAHA WATCHES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    #hero-slider img {
+      transition: opacity 1s ease-in-out;
+    }
+    .slide-up {
+      animation: slideUp 1.5s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+   <!-- Navbar -->
+   <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-gray-800">TAHA WATCHES</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-600 hover:text-yellow-500">Home</a>
+            <a href="#collection" class="text-gray-600 hover:text-yellow-500">Our Collection</a>
+            <a href="#brands" class="text-gray-600 hover:text-yellow-500">Our Brands</a>
+            <a href="contact.html" class="text-gray-600 hover:text-yellow-500">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-button" class="text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white">
+        <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white">Home</a>
+        <a href="#collection" class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white">Our Collection</a>
+        <a href="#brands" class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white">Our Brands</a>
+        <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white">Contact</a>
+    </div>
+</nav>
+
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+  <section class="relative flex items-center justify-center h-screen overflow-hidden">
+    <video class="absolute top-0 left-0 object-cover w-full h-full" autoplay loop muted>
+        <source src="https://in.tornado.store/cdn/shop/videos/c/vp/071a88418ffe41dc8ee9f0b3317b7bd9/071a88418ffe41dc8ee9f0b3317b7bd9.HD-720p-4.5Mbps-34500069.mp4?v=0
+        " type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="relative z-10 text-center text-white p-5">
+        <h1 class="text-5xl font-bold mb-4">Welcome to TAHA WATCHES</h1>
+        <p class="text-lg mb-8">Explore our exquisite collection of watches.</p>
+        <a href="#collection" class="inline-block px-6 py-3 text-lg font-semibold text-black bg-yellow-400 rounded-lg hover:bg-yellow-300 transition duration-300">Shop Now</a>
+    </div>
+</section>
+
+ <!-- Our Collection Section -->
+  <a href="product.inquiry.html">
+ <section id="collection" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Collection</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Product Cards (20 Cards) -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20240213/L5FX/65cb848505ac7d77bb53859a/-473Wx593H-4934810810-multi-MODEL.jpg" alt="Titan Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Titan</h3>
+          <p class="text-gray-600">Exquisite craftsmanship for the modern gentleman.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/n/m/g/-original-imagz3zg3xmqhr2z.jpeg?q=90&crop=false" alt="Fastrack Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Fastrack</h3>
+          <p class="text-gray-600">A perfect blend of fashion and functionality.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://jamesandco.in/wp-content/uploads/2024/04/1118.jpg" alt="Firebolt Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Firebolt</h3>
+          <p class="text-gray-600">Bringing technology and tradition together.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw26486740/images/Sonata/Catalog/77105NM01_1.jpg?sw=800&sh=800" alt="Sonata Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Sonata</h3>
+          <p class="text-gray-600">Elegance for every occasion.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/s/h/u/-original-imagpfdvdegyu3sh.jpeg?q=90&crop=false" alt="Casio Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Casio</h3>
+          <p class="text-gray-600">Innovation and precision for every wrist.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://www.bijouxmedusa.com/cdn/shop/products/rolex-submariner-41mm-126610ln-montre-stainless-bijoux-medusa-homme-quebec-canada-149_800x.jpg?v=1674781693" alt="Rolex Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Rolex</h3>
+          <p class="text-gray-600">Timeless luxury and elegance.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://www.reeds.com/media/catalog/product/cache/38c3c1b8e53ef11aa9803a5390245afc/m/e/men_s_omega_seamaster_planet_ocean_master_chronometer_blue_dial_watch_o21530442103001-1-19668912-hx158bece5.jpg" alt="Omega Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Omega</h3>
+          <p class="text-gray-600">Precision meets style.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://media.karousell.com/media/photos/products/2020/03/14/new_tag_heuer_carrera_calibre_heuer_02_automatic_black_skeleton_dial_mens_watch_cbg2051fc6426_1584122868_3b2bf119b_progressive" alt="Tag Heuer Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Tag Heuer</h3>
+          <p class="text-gray-600">Performance, precision, and prestige.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://finebuy.co.in/wp-content/uploads/2023/07/hublot-black.webp" alt="Hublot Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Hublot</h3>
+          <p class="text-gray-600">The art of fusion in fine watchmaking.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://cdn.shopify.com/s/files/1/0721/9897/9877/files/rb0139211g1p1-1_426f5c30-ec06-49de-b36c-d4ed16db19cc_1200x.jpg?v=1696511749" alt="Breitling Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Breitling</h3>
+          <p class="text-gray-600">Precision instruments for professionals.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://cdn2.jomashop.com/media/catalog/product/l/o/longines-presence-automatic-gold-dial-men_s-watch-l49212328.jpg" alt="Longines Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Longines</h3>
+          <p class="text-gray-600">Elegance is an attitude.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://images.watchfinder.co.uk/imgv3/stock/249534/Panerai-LuminorSubmersible-PAM00389-249534-230830-091050.jpg;quality=90;h=600,%20https://images.watchfinder.co.uk/imgv3/stock/249534/Panerai-LuminorSubmersible-PAM00389-249534-230830-091050.jpg;quality=55;h=1200%202x" alt="Panerai Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Panerai</h3>
+          <p class="text-gray-600">Italian design meets Swiss technology.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://i.roamcdn.net/hz/pi/listing-thumb-543w/40adf42476e1b8bfe38adf54fc3d43fc/-/horizon-files-prod/pi/picture/qzvvgprv/695aa2395532d5c679e50f6bc0e8dfb862bd3e81.jpg" alt="Bulgari Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Bulgari</h3>
+          <p class="text-gray-600">Excellence in craftsmanship.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://i5.walmartimages.com/asr/3606927e-6d3c-48cf-a42f-6238796f5073.05da008cd431307aa873779abb475ff9.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Seiko Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Seiko</h3>
+          <p class="text-gray-600">Innovation, quality, and craftsmanship.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://citizenwatch.widen.net/content/xlgbiq5ja7/jpeg/Addysen.jpeg?u=41zuoe&width=800&height=800&quality=80&crop=false&keep=c&color=F9F8F6" alt="Citizen Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Citizen</h3>
+          <p class="text-gray-600">A leader in eco-friendly watch technology.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4PahA-_Ou6GUrV2y1mI2Ibt_iSJ8CrZQp2PRAU-9wC_Ylq6TuOXnib5IozHABbpdBU8U&usqp=CAU" alt="Movado Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Movado</h3>
+          <p class="text-gray-600">Modern design with a focus on functionality.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://i.ebayimg.com/images/g/YTsAAOSwqDdiT0R~/s-l1200.jpg" alt="Hamilton Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Hamilton</h3>
+          <p class="text-gray-600">American spirit meets Swiss precision.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://justintime.in/cdn/shop/products/R12393633.jpg?v=1682041193" alt="Rado Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Rado</h3>
+          <p class="text-gray-600">Innovation in design and materials.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="https://static.helioswatchstore.com/media/catalog/product/t/0/t035.627.11.051.00.jpg" alt="Tissot Watch" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">Tissot</h3>
+          <p class="text-gray-600">Swiss luxury watches with a sporty edge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</a>
+
+<section id="brands" class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Brands</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ20n4M-QkGDxiXR14Fxd-6-72ORTuNUY8CKg&s" alt="Titan" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://www.shutterstock.com/image-vector/fastrack-company-logo-kerala-india-260nw-2367759963.jpg" alt="Fastrack" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://play-lh.googleusercontent.com/_pNh_Gpmfd3Uvv-j23sEaLdF_P1Jy-KYq0VHJwzz_wPOU_bcawyzL3yCnxgM-Tp5vw" alt="Firebolt" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://m.media-amazon.com/images/S/aplus-media/sota/de52d92c-bf36-438f-ab6a-c06678db7fce.__CR150,0,343,343_PT0_SX300_V1___.png" alt="Sonata" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://logowik.com/content/uploads/images/seiko-watch2671.jpg" alt="Seiko" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://pbs.twimg.com/profile_images/731018863807205376/mOiwX69Z_400x400.jpg" alt="Casio" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPPFTgaz7GipIPkcc2J5KdObvlnuWAS6gKzg&s" alt="Rado" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://logowik.com/content/uploads/images/275_rolex.jpg" alt="Rolex" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdYuslkeBOE3gEkXbmKzee1_E5GZ2mCrB87Q&s" alt="Tag Heuer" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://1000logos.net/wp-content/uploads/2018/10/watch-brand-Panerai.jpg" alt="Panerai" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eNjDO-LqchU5YnReI91JHpOV4xIJ0GQ7Zg&s" alt="Omega" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://www.truefacet.com/guide/wp-content/uploads/2018/06/e5faa9e0567290568f272b357dce86a0-740x400.jpg" alt="Breitling" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://i.pinimg.com/736x/e0/ce/07/e0ce0771f4e6c58203eeb6a638375500.jpg" alt="Longines" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/bulova-1.svg" alt="Bulova" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://i.pinimg.com/736x/a8/da/5a/a8da5a5c9213db96e550c5466b0a8f05.jpg" alt="Fossil" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://logowik.com/content/uploads/images/tissot-watches8872.jpg" alt="Tissot" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGf6tZWjzV3K3n8ilMg-l4dnuPE0HQpJXSxw&s" alt="Guess" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://www.icon-icon.com/wp-content/uploads/2020/03/Hublot-logo-journal-du-luxe.png" alt="Hublot" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQh1D_d9fupqyuE2ymGqNKOu9BC0UYXnrAOg&s" alt="Michael Kors" class="brand-logo">
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="https://1000logos.net/wp-content/uploads/2020/01/Emporio-Armani-logo.jpg" alt="Emporio Armani" class="brand-logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .brand-logo {
+    max-width: 150px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .brand-logo:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .brand-logo {
+      max-width: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .brand-logo {
+      max-width: 80px;
+    }
+  }
+</style>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 TAHA WATCHES. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Slider functionality
+    const images = document.querySelectorAll('#hero-slider img');
+    let current = 0;
+
+    function slideImages() {
+      images[current].classList.remove('opacity-100');
+      images[current].classList.add('opacity-0');
+      current = (current + 1) % images.length;
+      images[current].classList.remove('opacity-0');
+      images[current].classList.add('opacity-100');
+    }
+
+    setInterval(slideImages, 3000);
+  </script>
+
+</body>
+</html>
